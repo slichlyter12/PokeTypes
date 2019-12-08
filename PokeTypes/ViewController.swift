@@ -79,14 +79,14 @@ class ViewController: UIViewController, PokeDelegate {
     
     func loadResults() {
         var resultTypes: [String] = [String]()
-        for t in pokeTypes {
-            if t.type == selectedType {
+        for type in pokeTypes {
+            if type.type == selectedType {
                 switch selectedStrength {
                 case .strong:
-                    resultTypes = t.strong
+                    resultTypes = type.strong
                     break
                 case .weak:
-                    resultTypes = t.weak
+                    resultTypes = type.weak
                     break
                 }
                 break
