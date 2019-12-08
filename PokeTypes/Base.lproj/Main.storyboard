@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PokeTypes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fls-bo-GvL" customClass="TypePickerView" customModule="PokeTypes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="162"/>
+                            </pickerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ice-MY-cjg">
+                                <rect key="frame" x="20" y="202" width="374" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="QSH-C9-IO2"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="is STRONG against"/>
+                                    <segment title="is WEAK against"/>
+                                </segments>
+                                <connections>
+                                    <action selector="strengthChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="29b-F2-ocu"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yyM-ui-re9" customClass="ResultTableView" customModule="PokeTypes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="240" width="414" height="622"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="typeCell" textLabel="VHW-ep-yds" style="IBUITableViewCellStyleDefault" id="S8Z-Xj-L9a">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S8Z-Xj-L9a" id="Ipc-Bp-8EQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VHW-ep-yds">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ice-MY-cjg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2Lj-fN-m1x"/>
+                            <constraint firstItem="Fls-bo-GvL" firstAttribute="trailing" secondItem="yyM-ui-re9" secondAttribute="trailing" id="Fwj-dQ-dlq"/>
+                            <constraint firstItem="yyM-ui-re9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HgQ-Tp-r8J"/>
+                            <constraint firstItem="ice-MY-cjg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="158" id="SJg-ka-kCq"/>
+                            <constraint firstItem="Fls-bo-GvL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XsF-mD-0A8"/>
+                            <constraint firstItem="yyM-ui-re9" firstAttribute="top" secondItem="ice-MY-cjg" secondAttribute="bottom" constant="7" id="Yub-yw-LaI"/>
+                            <constraint firstItem="Fls-bo-GvL" firstAttribute="leading" secondItem="yyM-ui-re9" secondAttribute="leading" id="Zm5-as-7wp"/>
+                            <constraint firstItem="yyM-ui-re9" firstAttribute="top" secondItem="Fls-bo-GvL" secondAttribute="bottom" constant="34" id="bsr-ou-dpc"/>
+                            <constraint firstItem="Fls-bo-GvL" firstAttribute="centerX" secondItem="ice-MY-cjg" secondAttribute="centerX" id="d7E-RL-Ov4"/>
+                            <constraint firstItem="ice-MY-cjg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eGl-Az-eKS"/>
+                            <constraint firstItem="Fls-bo-GvL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yJh-xi-cX4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultTableView" destination="yyM-ui-re9" id="jLK-EE-Ghd"/>
+                        <outlet property="strengthSegmentedControl" destination="ice-MY-cjg" id="lmy-hh-PWA"/>
+                        <outlet property="typePicker" destination="Fls-bo-GvL" id="Jrh-RF-pog"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

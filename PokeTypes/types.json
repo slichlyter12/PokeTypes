@@ -1,0 +1,210 @@
+[{
+    "type": "bug",
+    "strong": [
+        "grass",
+        "dark",
+        "psychic"
+    ],
+    "weak": [
+        "fire",
+        "flying",
+        "rock"
+    ]
+}, {
+    "type": "dark",
+    "strong": [
+        "ghost",
+        "psychic"
+    ],
+    "weak": [
+        "bug",
+        "fairy",
+        "fighting"
+    ]
+}, {
+    "type": "dragon",
+    "strong": [
+        "dragon"
+    ],
+    "weak": [
+        "dragon",
+        "fairy",
+        "ice"
+    ]
+}, {
+    "type": "electric",
+    "strong": [
+        "flying",
+        "water"
+    ],
+    "weak": [
+        "ground"
+    ]
+}, {
+    "type": "fairy",
+    "strong": [
+        "fighting",
+        "dark",
+        "dragon"
+    ],
+    "weak": [
+        "poison",
+        "steel"
+    ]
+}, {
+    "type": "fighting",
+    "strong": [
+        "dark",
+        "ice",
+        "normal",
+        "rock",
+        "steel"
+    ],
+    "weak": [
+        "fairy",
+        "flying",
+        "psychic"
+    ]
+}, {
+    "type": "fire",
+    "strong": [
+        "bug",
+        "grass",
+        "ice",
+        "steel"
+    ],
+    "weak": [
+        "ground",
+        "rock",
+        "water"
+    ]
+}, {
+    "type": "flying",
+    "strong": [
+        "bug",
+        "fighting",
+        "grass"
+    ],
+    "weak": [
+        "electric",
+        "ice",
+        "rock"
+    ]
+}, {
+    "type": "ghost",
+    "strong": [
+        "ghost",
+        "psychic"
+    ],
+    "weak": [
+        "dark",
+        "ghost"
+    ]
+}, {
+    "type": "grass",
+    "strong": [
+        "ground",
+        "rock",
+        "water"
+    ],
+    "weak": [
+        "bug",
+        "fire",
+        "flying",
+        "ice",
+        "poison"
+    ]
+}, {
+    "type": "ground",
+    "strong": [
+        "electric",
+        "fire",
+        "poison",
+        "rock",
+        "steel"
+    ],
+    "weak": [
+        "grass",
+        "ice",
+        "water"
+    ]
+}, {
+    "type": "ice",
+    "strong": [
+        "dragon",
+        "flying",
+        "grass",
+        "ground"
+    ],
+    "weak": [
+        "fighting",
+        "fire",
+        "rock",
+        "steel"
+    ]
+}, {
+    "type": "normal",
+    "strong": [],
+    "weak": [
+        "fighting"
+    ]
+}, {
+    "type": "poison",
+    "strong": [
+        "fairy",
+        "grass"
+    ],
+    "weak": [
+        "ground",
+        "psychic"
+    ]
+}, {
+    "type": "psychic",
+    "strong": [
+        "fighting",
+        "poison"
+    ],
+    "weak": [
+        "bug",
+        "dark",
+        "ghost"
+    ]
+}, {
+    "type": "rock",
+    "strong": [
+        "bug",
+        "fire",
+        "flying",
+        "ice"
+    ],
+    "weak": [
+        "fighting",
+        "grass",
+        "ground",
+        "steel",
+        "water"
+    ]
+}, {
+    "type": "steel",
+    "strong": [
+        "fairy",
+        "ice",
+        "rock"
+    ],
+    "weak": [
+        "fighting",
+        "fire",
+        "ground"
+    ]
+}, {
+    "type": "water",
+    "strong": [
+        "fire",
+        "ground",
+        "rock"
+    ],
+    "weak": [
+        "electric",
+        "grass"
+    ]
+}]
