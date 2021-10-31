@@ -17,7 +17,7 @@ class ViewController: UIViewController, PokeDelegate {
     var pokeTypes: [StrengthType] = [StrengthType]()
     
     var selectedType: String = ""
-    var selectedStrength: Strength = .strong
+    var selectedStrength: Strength = .weak
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +52,7 @@ class ViewController: UIViewController, PokeDelegate {
         
         // initialize view
         didSelectType(type: pokeTypes[0].type)
+        strengthSegmentedControl.selectedSegmentIndex = 1
         loadResults()
     }
 
